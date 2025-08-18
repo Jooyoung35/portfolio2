@@ -6,6 +6,7 @@
   <title>Jooyoung's Portfolio</title>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
   <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./images/ico-heart2.png">
 </head>
@@ -13,21 +14,25 @@
   <div id="header">
     <h2 class="logo"><a href="#">KIM JOO YOUNG</a></h2>
     <ul class="gnb">
-      <li><a href="#about">&lt;About me/&gt;</a></li>
+      <li><a href="#profile">&lt;About me/&gt;</a></li>
       <li><a href="#projects">&lt;Projects/&gt;</a></li>
       <li><a href="#footer">&lt;Contact/&gt;</a></li>
     </ul>
   </div>
 
   <div id="intro">
-    <!-- <video src="./images/Generated File August 04, 2025 - 1_55PM.mp4" autoplay muted loop playsinline></video> -->
     <div class="i-am">
       <p>I am</p>
       <div class="brackets">[ <span id="typed"></span>] </div>
     </div>
+    <!-- <video src="./images/Generated File August 04, 2025 - 1_55PM.mp4" autoplay muted loop playsinline></video> -->
   </div>  
 
   <div id="about">
+    <div class="scroll-ico">
+      <span class="material-symbols-outlined">arrow_downward</span>
+      <p>SCROLL</p>
+    </div>
     <div class="parallax t1">디자인 감각과 퍼블리싱 역량을</div>
     <div class="parallax t2">모두 갖춘 김주영입니다.</div>
     <div class="parallax t3">코드지향적 디자이너이자</div>
@@ -169,27 +174,216 @@
   </div>
 
 
+  <div id="projects">
+    <div class="wrap-menu">
+      <h2 class="sub-tit pro-sub">·PROJECTS</h2>
+      <ul class="work-menu">
+        <li onclick="openTab('web',this);">Web Projects</li>
+        <li onclick="openTab('design',this);">Design</li>
+      </ul>
 
-<div id="footer">
+      <ul class="work-cont">
+        <li id="web" class="tab">
+          <ul class="web-cont">
+            <li class="works aromatica">
+              <div class="desc-area">
+                <p class="tag">#개인 프로젝트 #기여도100% #퍼블리싱 #반응형</p>
+                <div class="cont-tit">
+                  <h2>아로마티카</h2>
+                  <a href="https://jooyoung35.github.io/aromatica/" target="_blank" class="view-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    사이트 보러가기
+                  </a>
+                </div>
+                <p class="concept">
+                  아로마티카 브랜드의 메인 페이지를 클론 코딩하며 웹 퍼블리싱과 반응형 디자인 실력을 키운 프로젝트입니다.<br> 단순히 UI를 복제하는 데 그치지 않고,  기존 사이트보다 <span>더 세분화된 반응형 브레이크포인트를 설정</span>해 <span>다양한<br> 해상도에서도 자연스럽게 콘텐츠가 배치되도록 개선</span>했습니다.
+                </p>
+                <ul class="use-skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li>Swiper.js</li>
+                </ul>
+              </div>
+              <div class="img-area">
+                <img src="images/aromatica.png" alt="아로마티카">
+              </div>
+            </li>
+
+            <li class="works pantone">
+              <div class="desc-area">
+                <p class="tag">#개인 프로젝트 #기여도100% #기획 #디자인 #퍼블리싱 #반응형</p>
+                <div class="cont-tit">
+                  <h2>팬톤페인트</h2>
+                  <a href="https://jooyoung35.github.io/pantone_paint/" target="_blank" class="view-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    사이트 보러가기
+                  </a>
+                </div>
+                <p class="concept">
+                  브랜드 고유 컬러 정체성을 강조하기 위해 <span>시각 중심 UI로 재구성</span>하였으며, 컨텐츠 흐름을 단순화하고 팬톤<br>컬러의 감성과 분위기가 돋보이도록 여백·폰트·컬러에 집중했습니다. 색상이 곧 컨텐츠가 되는 구조로 기획하여<br>브랜드 아이덴티티를 전달하고, 다양한 디바이스에 맞춰 반응형으로 최적화했습니다.
+                </p>
+                <ul class="use-skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li>Swiper.js</li>
+                  <li>GSAP</li>
+                  <li class="blue">Figma</li>
+                  <li class="blue">Photoshop</li>
+                </ul>
+              </div>
+              <div class="img-area">
+                <img src="images/pantone.png" alt="팬톤페인트">
+              </div>
+            </li>
+
+            <li class="works hyundai">
+              <div class="desc-area">
+                <p class="tag">#개인 프로젝트 #기여도100% #기획 #디자인 #퍼블리싱 #반응형</p>
+                <div class="cont-tit">
+                  <h2>현대중공업</h2>
+                  <a href="https://jooyoung35.github.io/hyundai_ind/" target="_blank" class="view-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    사이트 보러가기
+                  </a>
+                </div>
+                <p class="concept">
+                  기존 구조를 유지하면서 <span>전문성과 신뢰감을 강화하는 방향으로 리디자인</span> 했습니다. 메인 배너에 테크놀로지<br>이미지를 적용하고, Sustainbility와 Our Business를 독립 섹션으로 구성해 정보 접근성을 높였습니다.<br>또한 컨텐츠를 시각적으로 정리해<span>가독성을 개선</span>하고, 투자 정보 섹션을 추가했습니다.
+                </p>
+                <ul class="use-skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li>GSAP</li>
+                  <li class="blue">Figma</li>
+                  <li class="blue">Photoshop</li>
+                </ul>
+              </div>
+              <div class="img-area">
+                <img src="images/hyundai.png" alt="현대중공업">
+              </div>
+            </li>
+            <li class="works vitra">
+              <div class="desc-area">
+                <p class="tag">#개인 프로젝트 #기여도100% #기획 #디자인 #퍼블리싱 #반응형</p>
+                <div class="cont-tit">
+                  <h2>vitra.</h2>
+                  <a href="https://jooyoung35.github.io/vitra/" target="_blank" class="view-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    사이트 보러가기
+                  </a>
+                </div>
+                <p class="concept">
+                  브랜드의 프리미엄 이미지를 강조하기 위해<span> 시각 중심의 UI로 재구성</span>하였으며, 직관적인 카테고리와 고해상도<br><span>이미지를 활용해 제품의 가치와 분위기를 부각</span>했습니다. 환경 지속 가능성 등 브랜드 스토리를 별도 섹션에<br>배치해 철학을 전달하고, 여백·폰트·컬러의 조화를 통해 세련된 아이덴티티를 구현하였습니다.
+                </p>
+                <ul class="use-skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li>GSAP</li>
+                  <li class="blue">Figma</li>
+                  <li class="blue">Photoshop</li>
+                </ul>
+              </div>
+              <div class="img-area">
+                <img src="images/vitra.png" alt="vitra">
+              </div>
+            </li>
+            <li class="works onsil">
+              <div class="desc-area">
+                <p class="tag">팀프로젝트 #백엔드협업 #기여도40% #기획 #디자인 #퍼블리싱 #JSON구조화 #DOM 기반 테이블 렌더링</p>
+                <div class="cont-tit">
+                  <h2>온실스튜디오</h2>
+                  <a href="https://jooyoung35.github.io/onsil_flower_studio/" target="_blank" class="view-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    사이트 보러가기
+                  </a>
+                </div>
+                <p class="concept">
+                  <span>브랜딩 기획부터, 디자인컨셉, 업무분장까지 전 과정을 주도</span>한 프로젝트입니다. 브랜드 아이덴티티를 시각적으로<br>구현하기 위해 이미지 스타일, 폰트 톤앤매너 등을 설계하고 전체 디자인을 리드했습니다. 관리자 페이지는<br>Chart.js 기반 대시보드, 주문 테이블, 재사용 JSON 구조 설계 등<span>백엔드 연동 효율성을 고려</span>하였습니다.
+                </p>
+                <ul class="use-skill">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JQuery</li>
+                  <li>JavaScript</li>
+                  <li>Chart.js</li>
+                  <li>GSAP</li>
+                  <li class="blue">Figma</li>
+                  <li class="blue">Photoshop</li>
+                </ul>
+              </div>
+              <div class="img-area">
+                <img src="images/onsil.png" alt="vitra">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li id="design" class="tab">캬캬캬컄캬</li>
+      </ul>
+    </div>
+  </div>
 
 
-  <div class="marquee">
-    <div class="track">
-      <div class="content">
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
+
+
+
+  <div id="footer">
+    <h2 class="sub-tit">·CONTACT</h2>
+    <div class="wrap-cont-foot">
+      <div class="left-area">
+        <p>Developer</p>
+        <h3>KIM JOO YOUNG</h3>
+        <p class="copyright">ⓒ2025. kimjooyoung. All Rights Reserved.<br>
+          Chrome 브라우저 1920*1080해상도에 최적화된 사이트입니다.
+        </p>
       </div>
-      <div class="content">
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
-        <span>Design it,  Build it,  Make it real!</span>
+
+      <ul class="right-area">
+        <li>
+          <a href="tel:01048093500">010-4809-3500</a>
+          <img src="images/call_w.png" alt="ico-phone">
+        </li>
+        <li>
+          <a href="mailto:jykimjulia@gamil.com">jykimjulia@gmail.com</a>
+          <img src="images/mail_w.png" alt="ico-mail">
+        </li>
+        <li>
+          <a href="#">jooyoung35.github.io/portfolio2/</a>
+          <img src="images/web_w.png" alt="ico-web">
+        </li>
+        <li>
+          <a href="https://github.com/Jooyoung35" target="_blank">github.com/Jooyoung35</a>
+          <img src="images/git_w.png" alt="ico-git">
+        </li>
+      </ul>
+      <p class="copyright-mo">ⓒ2025. kimjooyoung. All Rights Reserved.<br>
+        Chrome 브라우저 1920*1080해상도에 최적화된 사이트입니다.
+      </p>
+    </div>
+    
+    <div class="marquee">
+      <div class="track">
+        <div class="content">
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+        </div>
+        <div class="content">
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+          <span>Design it,  Build it,  Make it real!</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
