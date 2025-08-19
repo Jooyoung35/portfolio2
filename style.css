@@ -335,7 +335,126 @@ body{
   display: block;
 }
 
+/* 디자인탭 */
+#projects .wrap-menu .work-cont .design-cont{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+  row-gap: 40px;
+}
+#projects .wrap-menu .work-cont .design-cont > li{
+  width: 48.5%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#projects .wrap-menu .work-cont .design-cont > li .basic-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+}
+#projects .wrap-menu .work-cont .design-cont > li .basic-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#projects .wrap-menu .work-cont .design-cont > li.buddy .basic-img{
+  background-image: url(images/design-01.png);
+}
+#projects .wrap-menu .work-cont .design-cont > li.ex-design .basic-img{
+  background-image: url(images/design-02.png);
+}
+#projects .wrap-menu .work-cont .design-cont > li.dashboard .basic-img{
+  background-image: url(images/design-03.png);
+}
+#projects .wrap-menu .work-cont .design-cont > li.hospital .basic-img{
+  background-image: url(images/design-04.png);
+}
+#projects .wrap-menu .work-cont .design-cont > li .hover-txt{
+  position: absolute;
+  top: 0; left: 0;
+  /* display: none; */
+  transform: translateY(500px);
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background: linear-gradient(to right, #202020, #121212ea);
+  transition: all 0.5s;
+}
+#projects .wrap-menu .work-cont .design-cont > li:hover .hover-txt{
+  display: block;
+  transform: translateY(0px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#projects .wrap-menu .work-cont .design-cont > li .hover-txt .de-tag{
+  font-size: 18px;
+  color: #f4f4f4;
+}
+#projects .wrap-menu .work-cont .design-cont > li .hover-txt h2{
+  font-size: 40px;
+  margin: 20px 0 40px;
+}
+#projects .wrap-menu .work-cont .design-cont > li .de-concept{
+  font-size: 18px;
+  font-weight: 200;
+  color: #f4f4f4;
+  line-height: 1.5;
+}
+#projects .wrap-menu .work-cont .design-cont > li.ex-design .img-wrap{
+  width: 100%;
+}
+#projects .wrap-menu .work-cont .design-cont > li.ex-design div img{
+  /* margin-top: 2%; */
+  width: 85%;
+} 
 
+#projects .wrap-menu .work-cont .design-cont > li .use-skill{
+  display: flex;
+  margin-top: 35px;
+}
+#projects .wrap-menu .work-cont .design-cont > li .use-skill li{
+  background-color: #5d7fed;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+  transition: all 0.4s;
+  font-weight: 500;
+}
+#projects .wrap-menu .work-cont .design-cont > li .use-skill li:hover{
+  transform: translateY(-3px);
+}
+
+
+#projects .wrap-menu .work-cont .design-cont > li .view-btn{
+  display: block;
+  color: #fff;
+  width: 180px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  line-height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.3s;
+}
+#projects .wrap-menu .work-cont .design-cont > li .view-btn:hover{
+  color: #0c0c0c;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+#projects .wrap-menu .work-cont .design-cont > li .view-btn span{
+  transition: all 0.5s;
+}
+#projects .wrap-menu .work-cont .design-cont > li .view-btn:hover span{
+  transform: rotate(180deg);
+}
 
 
 
@@ -437,6 +556,10 @@ body{
   #projects .work-cont .works .img-area img{
     width: 350px !important;
   }
+
+  #projects .wrap-menu .work-cont .design-cont > li .hover-txt h2{
+    font-size: 35px;
+  }
 }
 
 
@@ -505,6 +628,14 @@ body{
 
   #projects .work-cont .works .img-area{
     display: none;
+  }
+
+  /* projects design */
+  #projects .wrap-menu .work-cont .design-cont{
+    flex-direction: column;
+  }
+  #projects .wrap-menu .work-cont .design-cont > li{
+    width: 100%;
   }
 
   #footer{
@@ -624,6 +755,25 @@ body{
 
   #projects .work-cont .works .img-area{
     display: none;
+  }
+
+   /* projects design */
+  #projects .wrap-menu .work-cont .design-cont{
+    flex-direction: column;
+    padding: 0px;
+  }
+  #projects .wrap-menu .work-cont .design-cont > li{
+    width: 100%;
+  }
+  #projects .wrap-menu .work-cont .design-cont > li .hover-txt .de-tag{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #projects .wrap-menu .work-cont .design-cont > li .hover-txt h2{
+    font-size: 30px;
+  }
+  #projects .wrap-menu .work-cont .design-cont > li .de-concept{
+    font-size: 16px;
   }
 
   #footer{
